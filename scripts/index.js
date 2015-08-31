@@ -1,3 +1,3 @@
 $(function(){
-	alert('mark');
+	//alert('mark');
 })

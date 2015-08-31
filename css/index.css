@@ -1,0 +1,45 @@
+body {
+	padding:0;
+	margin:0;
+	background-color: #c0392b;
+	height: 1000px;
+	/*background: url('../img/me.jpg');*/
+	/*background-repeat: no-repeat;*/
+}
+
+header {
+	background-color: #e74c3c;
+	width: 100%;
+	height: 6.5em;
+	position: fixed;
+}
+
+.container {
+	top:20em !important;
+}
+
+.profile {
+	padding: 5em 2em 2em 2em;
+	position: relative;
+	top: -3em;
+}
+
+nav {
+	top:50%;
+	position: relative;
+	float:right;
+	right:5%;
+}
+
+nav a {
+	color: #FFF;
+	margin-left: 2em;
+}
+
+nav a:hover{
+	text-decoration: none;
+}
+
+nav a span:hover{
+	color: #DCDCDC;
+}
