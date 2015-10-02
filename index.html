@@ -11,16 +11,16 @@
 </head>
 <body>
 	<header ng-controller="headerController">
-		<nav>
+		<nav ng-class="{ true: 'to-top', false: 'to-down' }[top]">
 			<a ng-click="home()">Home</a>
-			<a ng-click="loc()" ng-class="{ 'hide' : haha }">Location-Contact</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">History</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">Rates</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">Picture Gallery</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">RVs For Sale</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">RV Sites</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">Links</a>
-			<a ng-click="" ng-class="{ 'hide' : haha }">Park Rules</a>
+			<a ng-click="loc()">Location-Contact</a>
+			<a ng-click="">History</a>
+			<a ng-click="">Rates</a>
+			<a ng-click="">Picture Gallery</a>
+			<a ng-click="">RVs For Sale</a>
+			<a ng-click="">RV Sites</a>
+			<a ng-click="">Links</a>
+			<a ng-click="">Park Rules</a>
 		</nav>
 	</header>
 	<footer>	

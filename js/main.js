@@ -2,13 +2,12 @@ var app = angular.module('app', ['ngAnimate']);
 
 app.controller('headerController', function($scope){
 
-	$scope.haha = true;	
+	$scope.top = false;	
 	$scope.home = function(){
-		$scope.haha = !this.haha;
+		$scope.top = false;	
 	}
-
-
+	
 	$scope.loc = function(){
-		console.log('loc')
+		$scope.top = true;	
 	}
 })
