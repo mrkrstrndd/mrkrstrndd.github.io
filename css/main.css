@@ -10,12 +10,13 @@ header{
 	background: url("../assets/Blue_Ridge_Mountains1.jpg");
     background-size: cover;
 	background-repeat: no-repeat;
-	min-height:94%;
+	min-height:93%;
 }
 
 footer{
 	background-color:#2D2D2D;
-	min-height:6%;
+	min-height:7%;
+	position:absolute;
 	width:100%;
 }
 
@@ -35,7 +36,7 @@ nav > a {
 }
 
 footer a{
-	padding:1em;
+	padding:0.7em;
 	bottom: 1em;
 }
 
@@ -45,32 +46,40 @@ header nav a:hover{
 	cursor: pointer;
 }
 
-.social{
-	padding-top:1em;
-	max-width: 200px;
-    margin: 0 auto;
-}
 .social a{
 	margin-left:2em;
+}
+
+.social{
+    padding-top: 2em;
+	position: relative;
+	max-width: 200px;
+    margin: 0 auto;
 }
 
 .icon_fb{
 	background-image: url("../assets/fb.svg");
 	background-repeat: no-repeat;
-	background-size: 70% 70%;
+	background-size: 100% auto;
 }
 
 .icon_twit{
 	background-image: url("../assets/twitter.svg");
 	background-repeat: no-repeat;
-	background-size: 70% 70%;
+	background-size: 100% auto;
 }
 .icon_gplus{
 	background-image: url("../assets/gplus.svg");
 	background-repeat: no-repeat;
-	background-size: 70% 70%;
+	background-size: 100% auto;
 }
 
-.hide {
-	display:none;
+.to-top {
+	transition: all 1s ease;
+	top: 2em;
+}
+
+.to-down{
+	transition: all 1s ease;
+	top: 20em;
 }
