@@ -1,27 +1,44 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="app">
 <head>
-	<title>Mark's Page</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/index.css" />
+	<meta charset="utf-8"/>
+	<script src="../applevalleytravelpark/js/angular.min.js"></script>
+	<script src="../applevalleytravelpark/js/angular-animate.js"></script>
+	<script src="../applevalleytravelpark/js/main.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../applevalleytravelpark/css/main.css" />
+	<title>Apple Valley Travel Park</title>
 </head>
 <body>
-	<header>
+	<header ng-controller="headerController">
 		<nav>
-			<a href=""><span>Home</span></a>
-			<a href=""><span>Experience</span></a>
-			<a href=""><span>Education</span></a>
-			<a href=""><span>Technical Skills</span></a>			
-			<a href=""><span>About Me</span></a>
+			<a ng-click="home()">Home</a>
+			<a ng-click="loc()" ng-class="{ 'hide' : haha }">Location-Contact</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">History</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">Rates</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">Picture Gallery</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">RVs For Sale</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">RV Sites</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">Links</a>
+			<a ng-click="" ng-class="{ 'hide' : haha }">Park Rules</a>
 		</nav>
-		<img src="img/me.jpg" class="img-circle profile" alt=""  width=200  />
 	</header>
-	<div>		
-		
-	</div>
-	<footer>
+	<footer>	
+		<div class="social">
+			<a class="icon_fb" ></a>
+			<a class="icon_twit"></a>
+			<a class="icon_gplus"></a>
+		</div>
 	</footer>
-	<script src='scripts/jquery-2.1.4.min.js'></script>
-	<script src='scripts/index.js'></script>
+
+<!-- 	<div ng-init="checked=true">
+  <label>
+    <input type="checkbox" ng-model="checked" style="float:left; margin-right:10px;"> Is Visible...
+  </label>
+  <div class="check-element sample-show-hide" ng-show="checked" style="clear:both;">
+    Visible...
+  </div> -->
+
+</div>
 </body>
 </html>
