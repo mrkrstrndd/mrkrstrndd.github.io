@@ -75,11 +75,23 @@ header nav a:hover{
 }
 
 .to-top {
-	transition: all 1s ease;
+	transition: all 0.4s ease;
 	top: 2em;
 }
 
 .to-down{
-	transition: all 1s ease;
+	transition: all 0.4s ease;
 	top: 20em;
+}
+
+.active{
+	background-color: #FFFFFF;
+	color: #578BC7;
+	cursor: pointer;
+}
+
+.content{
+	max-width:70%;
+	margin:0 auto;
+	padding-top: 20em;
 }
