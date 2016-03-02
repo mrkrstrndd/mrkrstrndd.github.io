@@ -2,34 +2,101 @@
 <html lang="en" ng-app="app">
 <head>
 	<meta charset="utf-8"/>
+	
 	<script src="../js/angular.min.js"></script>
     <script src="../js/angular-animate.js"></script>
-	<script src="../js/ui-router.min.js"></script> 
+	<script src="../js/ui-router.min.js"></script>
+	
 
-	<script src="../js/main.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="../js/main.js"></script> 
+	<link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
+
+
+
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	 <link href='https://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../assets/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.min.css" />
 
 	<title>Apple Valley Travel Park</title>
 </head>
-<body>
-	<header ng-controller="headerController">
-		<nav ng-class="{ true: 'to-top', false: 'to-down' }[top]">
-			<a ng-repeat="name in menuTitle" ng-click="select(name)"  ng-class="{ active: isActive(name) }">{{ name.name }}</a>
-		</nav>
-		<div class="content">
-			<div ui-view></div>
-		</div>
-		 
-	</header>
-	<footer>	
-		<div class="social">
-			<a class="icon_fb" ></a>
-			<a class="icon_twit"></a>
-			<a class="icon_gplus"></a>
-		</div>
-	</footer>
+<body  ng-controller="headerController">
+	
+	<div class="container bg" id="bg">
+		<main>
+			<div class="intro">
+				<p class="design">
+				  <span class="char1">D</span>
+				  <span class="char2">e</span>
+				  <span class="char3">s</span>
+				  <span class="char4">i</span>
+				  <span class="char5">g</span>
+				  <span class="char6">n</span>
+			
+				</p>
+				<span class="and">&</span>
+				<span class="code">Code</span>
+			</div>
 
+			<div class="theme">
+				<div class="content">
+					<button ui-sref="theme1" class="btn btn-primary btn-lg">Theme 1</button>
+					<button ui-sref="theme2" class="btn btn-success btn-lg">Theme 2</button>
+					<button ui-sref="theme3" class="btn btn-warning btn-lg">Theme 3</button>
+				</div>		
+				<div ui-view class="view"></div>		
+			</div>
+
+			
+
+			
+
+			
+		</main>
+
+	</div>
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/scrollMagic.min.js"></script> 
+	<script src="../js/sticky.js"></script>
+
+
+	<script type="text/javascript">
+		$(function(){		
+
+
+			$("div.intro p.design").click(function(){
+				$('div.theme').toggle("explode");
+				if($(this).parent('div.intro').hasClass('transform')){
+					$(this).parent('div.intro').removeClass('transform').addClass('untransform');
+					$("div.intro").css({'position':'relative'});
+					
+				} else{
+					$(this).parent('div.intro').removeClass('untransform').addClass('transform');
+					$("div.intro").css({'position':'fixed'});
+				}				
+			})
+
+			$('div.theme1').on( 'DOMMouseScroll mousewheel', function ( event ) {
+				console.log(event)
+			  if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+			    //scroll down
+			    console.log('Down');
+			  } else {
+			    //scroll up
+			    console.log('Up');
+			  }
+			  //prevent page fom scrolling
+			  return false;
+			});
+
+			//var controller = new ScrollMagic.Controller();
+
+		
+		})
+	</script>
 
 </body>
 </html>

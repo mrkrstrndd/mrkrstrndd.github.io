@@ -1,97 +1,267 @@
 body{
-	margin:0;
 	padding: 0;
+	margin: 0;
+}
+
+div.bg{
 	width:100%;
 	height:100vh;
-	font-family: "lato", sans-serif;
+	padding:0;
+	
+}
+
+div.intro{
+	padding-top:5%;
+	height:100vh;
+	z-index: 100;
+}
+
+div.intro{
+	text-align: center;
+	font-family: 'Ruthie', cursive;	
+}
+
+main p.design {
+	font-size:13em;
+	margin:0;
+	display: inline-block;
+}
+
+main p.design{
+	color: #315A42;
+}
+
+main span.and{
+	display: block;
+	font-size:3em;
+	color: #C14F4D;
+}
+
+main span.code{
+	font-family: 'Poiret One', cursive;
+	font-size:5em;
+}
+
+.design:hover {
+	cursor: pointer;
+}
+
+.design:hover > span.char1{
+	color: #630055;
+}
+
+.design:hover > span.char2{
+	color:#771700;
+}
+
+.design:hover > span.char3{
+	color: #066;
+}
+
+.design:hover > span.char4{
+	color:#C74E4E;
+}
+
+.design:hover > span.char5{
+	color:#D22F6A;
+}
+
+.design:hover > span.char6{
+	color:#E05D5D;
+}
+
+div.theme{
+	display: none;
+	width:100%;
+    position: absolute;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.transform{
+	transform : scale(0.15);
+	transform-origin: 0 0;
+	position:absolute;
+	left:1em;
+	-webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.untransform{
+	transform : scale(1);
+	transform-origin: 0% 0%;
+	-webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+
+div.content{
+	text-align:center;
+	padding-top: 1em;
+	padding-bottom:2em;
+	position: fixed;
+	width:100%;
+	background-image:linear-gradient(135deg, #8eaaff, #80ff84);
+	z-index:10;
+}
+
+div.view{
+	padding-top:10em;
+}
+
+div.contact-overview{
+	background-color: #a0ce4e;
+}
+div.contact-overview p{
+	display: inline-block;
+	padding: 0;
+}
+
+div.contact-overview div.socials{
+	border:none;
+    display: inline-block;
+	float: right;
+	padding:0.5em 1em 0.5em 0;
 }
 
 header{
-	background: url("../assets/Blue_Ridge_Mountains1.jpg");
-    background-size: cover;
-	background-repeat: no-repeat;
-	min-height:93%;
+	border-bottom:3px solid #a0ce4e;
+}
+div.contact-overview div.socials a{
+	color: #fff;
+	padding-left:0.5em;
 }
 
-footer{
-	background-color:#2D2D2D;
-	min-height:7%;
-	position:absolute;
-	width:100%;
+div.contact-overview p{
+	margin:0;
+	color:#fff;
+	padding:0.5em 0 0.5em 1em;
 }
 
-nav{
-	max-width: 90%;
-	margin: 0 auto;
-	top: 20em;
-	position: relative;
+div.contact-overview div.socials a{
+	font-size: 1.3em;
 }
 
-nav > a {
-	color: #FFF;
-	text-decoration: none;
-	margin-left:1em;
-	padding: 1em;
-	border: 0.1em white solid;
+div.theme1{
+	border: 2px solid #a0ce4e;
+	padding:0;
+	margin:0 0.5em 0 0.5em;
 }
 
-footer a{
-	padding:0.7em;
-	bottom: 1em;
+div.controls ul li a{
+	color:#a0ce4e;
 }
 
-header nav a:hover{
-	background-color: #FFFFFF;
-	color: #578BC7;
-	cursor: pointer;
+div.controls ul li{
+	list-style: none;
+	display: inline;
+	padding-left:2em;
 }
 
-.social a{
-	margin-left:2em;
-}
-
-.social{
-    padding-top: 2em;
-	position: relative;
-	max-width: 200px;
+div.control-container{
+	width: 90%;
     margin: 0 auto;
+    height:5em;
+    position: relative;
 }
 
-.icon_fb{
-	background-image: url("../assets/fb.svg");
+div.logo{
+	font-family: 'Ruthie', cursive;	
+	font-size:3em;
+}
+
+div.logo, div.controls{
+	display: inline-block;
+	position: absolute;
+}
+
+div.controls{
+	right: 0;
+    position: absolute;
+    bottom: 1em;
+}
+
+div.img-container{
+    height: 1000px;
+    max-height: 500px;
+    padding-bottom: 4em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.img-cover{
+	background: url('../assets/images/a.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	height:100%;
+	background-position: center top;
+    background-attachment: fixed;
+	-webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 
-.icon_twit{
-	background-image: url("../assets/twitter.svg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-}
-.icon_gplus{
-	background-image: url("../assets/gplus.svg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-}
-
-.to-top {
-	transition: all 0.4s ease;
-	top: 2em;
+div.img-container section{
+	color: #fff;
+    position: absolute;
+  	top:20%;
+  	left:20%;
+  	width:70%;
+    font-size: 4em;
+    line-height: 0.9em;
+    text-align: center;
+    padding-left:0;
+    padding-right:0;
 }
 
-.to-down{
-	transition: all 0.4s ease;
-	top: 20em;
+div.img-container section h4{
+	border-top: 2px solid #fff;
 }
 
-.active{
-	background-color: #FFFFFF;
-	color: #578BC7;
+div.introduction{
+    margin: 0 auto;
+    font-family: 'Antic Slab', Arial, Helvetica, sans-serif;
+    letter-spacing:normal;
+	width:100%;
+	line-height:normal;
+}
+
+div.block-container{
+	padding-bottom: 2em;
+}
+
+figure.img-circle{
+	padding:0 !important;
+}
+
+figure{
+	display: inline-block !important;
+	position: relative;
+	overflow: hidden;
+}
+
+figure section{
+	position: absolute;
+	display: none;
+	bottom:0;
+	width: 100%;
+}
+
+figure:hover > section{
+	color: white;
 	cursor: pointer;
+	display: block;
+	background-color:rgba(8,8,8,0.62);
+	top: 0;
+	padding-top: 20%;
 }
 
-.content{
-	max-width:70%;
-	margin:0 auto;
-	padding-top: 20em;
+figure:hover > img{
+	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
 }

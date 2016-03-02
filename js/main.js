@@ -3,55 +3,24 @@ var app = angular.module('app', ['ui.router','ngAnimate']);
 app.config(function($stateProvider, $urlRouterProvider) {
   //
   // For any unmatched url, redirect to /state1
-  $urlRouterProvider.otherwise("home");
+  $urlRouterProvider.otherwise("theme1");
   //
   // Now set up the states
   $stateProvider
-    .state('home', {
-      url: "/home",
-      templateUrl: "partials/home.html"
+    .state('theme1', {
+      url: "/theme1",
+      templateUrl: "partials/theme1.html"
     })
    
-    .state('location', {
-      url: "/location",
-      templateUrl: "partials/location.html"
+    .state('theme2', {
+      url: "/theme2",
+      templateUrl: "partials/theme2.html"
     })
 
-    .state('history', {
+    .state('theme3', {
       url: "/history",
-      templateUrl: "partials/history.html"
+      templateUrl: "partials/theme3.html"
     })
-
-    .state('rates', {
-      url: "/rates",
-      templateUrl: "partials/rates.html"
-    })
-
-    .state('gallery', {
-      url: "/gallery",
-      templateUrl: "partials/gallery.html"
-    })
-
-    .state('rvsale', {
-      url: "/rvsale",
-      templateUrl: "partials/rvsale.html"
-    })
-
-    .state('rvsite', {
-      url: "/rvsite",
-      templateUrl: "partials/rvsite.html"
-    })
-
-    .state('link', {
-      url: "/link",
-      templateUrl: "partials/link.html"
-    })
-
-    .state('rules', {
-      url: "/rules",
-      templateUrl: "partials/rules.html"
-    })
-
 
   
 });
@@ -84,13 +53,14 @@ app.controller('headerController', function($scope,$state,$stateParams){
 	$scope.top = false;
 
 	$scope.select = function(item){
-		if(item.name === 'Home')
-			$scope.top = false;
-		else
-			$scope.top = true;
+		// if(item.name === 'Home')
+		// 	$scope.top = false;
+		// else
+		// 	$scope.top = true;
 
-		$scope.selected = item; 
-		$state.go($scope.selected.link);
+		// $scope.selected = item; 
+		// $state.go($scope.selected.link);
+    console.log("haha");
 	}
 
 	$scope.isActive = function(item){
