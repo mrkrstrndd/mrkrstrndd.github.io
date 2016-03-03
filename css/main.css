@@ -190,10 +190,11 @@ div.img-container{
 }
 
 div.img-cover{
-	background: url('../assets/images/a.jpg');
+	background-image: url('../assets/images/a.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	height:100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
 	background-position: center top;
     background-attachment: fixed;
 	-webkit-filter: blur(4px);
@@ -264,4 +265,17 @@ figure:hover > img{
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
     filter: blur(2px);
+}
+
+hr{
+    width: 90%;
+    border: 1px solid #a0ce4e !important;
+}
+
+div.box{
+	padding: 1em 2em 1em 2em;
+}
+
+div.box button{
+	float:right;
 }
