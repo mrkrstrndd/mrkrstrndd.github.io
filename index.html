@@ -68,7 +68,7 @@
 
 
 			$("div.intro p.design").click(function(){
-				$('div.theme').toggle("explode");
+				$('div.theme').slideToggle("fast");
 				if($(this).parent('div.intro').hasClass('transform')){
 					$(this).parent('div.intro').removeClass('transform').addClass('untransform');
 					$("div.intro").css({'position':'relative'});
@@ -77,7 +77,7 @@
 					$(this).parent('div.intro').removeClass('untransform').addClass('transform');
 					$("div.intro").css({'position':'fixed'});
 				}				
-			})
+			});
 
 			$('div.theme1').on( 'DOMMouseScroll mousewheel', function ( event ) {
 				console.log(event)
