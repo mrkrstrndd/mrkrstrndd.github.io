@@ -160,8 +160,8 @@ div.facilities-box > section{
     width: 60%;
 }
 
-div.facilities-box > section h3{
-	margin-top:0;
+div.facilities-box:nth-child(odd){
+	background-color: #F3F3F3;
 }
 
 div.facilities-box div.pricing{
