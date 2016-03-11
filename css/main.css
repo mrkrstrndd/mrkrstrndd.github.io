@@ -1,3 +1,6 @@
+body{
+	font-family: 'Open Sans', sans-serif !important;
+}
 header{
 	position: relative;
 }
@@ -66,28 +69,83 @@ div.photos{
 }
 
 .slick-prev:before, .slick-next:before { 
-    color:#a0ce4e !important;
+    color:#000 !important;
 }
 
 div.container div.content-container 
  p{
- 	font-family: 'Open Sans', sans-serif !important;
+ 	
  	font-size:2em;
  	line-height: 1.7em;
  	text-align: center;
+ }
+
+ div.container div > span{
+ 	font-size:3em;
+ 	line-height: 0.9em;
+ 	float:left;
+ 	color: #a0ce4e;
  }
 
  div.container div.content-container span{
  	color:#a0ce4e;
  }
 
-
- div.fusion-one-third{
- 	font-family: 'Open Sans', sans-serif !important;
+ div.fusion-one-third{ 	
  	width: 30.66666%;
  	display: inline-block;
  	float: left;
+ 	padding-right:1em;
+ 	font-family: 'PT Sans', sans-serif !important;
  }
 
+ div.word-logo{
+ 	width:100%;
+ 	text-align: center;
+ 	font-family: 'PT Sans', sans-serif !important;
+ }
+
+  div.word-logo p{
+  	padding: 0;
+  	margin:0;
+  	line-height: 1;
+  }
+
+ div.word-logo p span.a{
+ 	color: #545454; 	
+    font-size: 5em;
+ }
+
+ div.word-logo p span.b{
+ 	color: #0F552D;
+ 	font-size: 5em;
+ }
+
+div.word-logo p span.c{
+	color: #0F552D;
+    font-size: 4em;
+}
+
+hr{
+	border-color: #e0dede;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.slick-slider{
+	margin:0 auto !important;
+}
+
+slick div.slick-list div > img{
+	width:100%;
+}
+
+section{
+	padding-top:4em;
+}
 
 
