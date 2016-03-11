@@ -160,7 +160,13 @@ div.facilities-box > section{
     width: 60%;
 }
 
+div.facilities-box > section h3{
+	margin-top:0;
+}
+
 div.facilities-box div.pricing{
 	color: #a0ce4e;
 	font-size:1.5em;
+	margin-top:1em;
+	margin-bottom: 1em;
 }
