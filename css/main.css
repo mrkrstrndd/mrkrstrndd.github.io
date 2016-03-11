@@ -80,9 +80,10 @@ div.container div.content-container
  	text-align: center;
  }
 
- div.container div > span{
+ div.container div.fusion-one-third span{
  	font-size:3em;
  	line-height: 0.9em;
+ 	letter-spacing: 0.1em;
  	float:left;
  	color: #a0ce4e;
  }
@@ -97,6 +98,7 @@ div.container div.content-container
  	float: left;
  	padding-right:1em;
  	font-family: 'PT Sans', sans-serif !important;
+ 	text-align: justify;
  }
 
  div.word-logo{
@@ -144,8 +146,21 @@ slick div.slick-list div > img{
 	width:100%;
 }
 
-section{
+body > section{
 	padding-top:4em;
 }
+div.facilities-box{
+	margin-bottom: 3em;
+	overflow: hidden;
+}
+div.facilities-box > section{
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 60%;
+}
 
-
+div.facilities-box div.pricing{
+	color: #a0ce4e;
+	font-size:1.5em;
+}
