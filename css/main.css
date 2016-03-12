@@ -123,14 +123,31 @@ div.content-container span{
  	height:6em;
  	border:1px solid #e5e4e4;
  	border-left:2px solid #a0ce4e;
+ 	position: relative;
  }
 
  div.rates::before{
-
+ 	content: "";
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left:4px;
+    padding-top: 3em;
+ 	transform: rotate(-3deg);
+ 	z-index:-1;
+ 	box-shadow: 0 17px 10px rgba(0, 0, 0, 0.7);
  }
 
   div.rates::after{
- 	
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    padding-top: 3em;
+    transform: rotate(3deg);
+    z-index: -1;
+    box-shadow: 0 17px 10px rgba(0, 0, 0, 0.7);
+    right: 4px;
  }
 
  div.rates p.rate-caption{
