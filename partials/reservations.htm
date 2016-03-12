@@ -1,3 +1,56 @@
-<div class="container">
-	reservations
+<div class="container the-container" id="reservation-container">
+	<div style="width:40%;padding:3em;background-color:red">
+		<div class="text-input">
+			<span ng-show="focus">Firstname</span>
+			<input type="text" ng-class="{ myFocus: focus }" ng-blur="blur=true;focus=false" ng-focus="focus=true" class="res_input" placeholder="Name">
+		</div>
+		<div class="text-input">
+			<span ng-show="focus">Email Address</span>
+			<input type="text" ng-class="{ myFocus: focus }" ng-blur="blur=true;focus=false" ng-focus="focus=true" class="res_input" placeholder="Email">
+		</div>
+		<div class="text-input">
+			<span ng-show="focus">Contact Number</span>
+			<input type="text" ng-class="{ myFocus: focus }" ng-blur="blur=true;focus=false" ng-focus="focus=true" class="res_input" placeholder="Contact No">
+		</div>
+		<div class="text-input">
+			<p>Are you:</p>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			   Tent Camping
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			   RV Camping
+			  </label>
+			</div>
+		</div>
+		<div class="text-input">
+			<p>If you are RV Camping :</p>
+			<p>What is the length of your RV? : <input type="text"/></p>
+		</div>
+		<div class="text-input">
+				
+			   		<p class="">What is the type: </p>
+				   
+				     <select class="">
+					  <option>Motorhome</option>
+					  <option>5th Wheel</option>
+					  <option>Travel Trailer</option>
+					  <option>Popup</option>
+					  <option>Other</option>
+					</select>
+				 
+			
+		</div>
+		<div class="text-input">
+			<p>Arrival Date: </p><input type="date" />
+			<p>Departure Date: </p><input type="date" />
+		</div>
+		<div class="text-input">
+			<p>Special Requirements</p><textarea></textarea>
+		</div>
+	</div>
 </div>

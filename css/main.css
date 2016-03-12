@@ -72,7 +72,7 @@ div.photos{
     color:#000 !important;
 }
 
-div.container div.content-container 
+div.content-container 
  p{
  	
  	font-size:2em;
@@ -80,7 +80,7 @@ div.container div.content-container
  	text-align: center;
  }
 
- div.container div.fusion-one-third span{
+ div.fusion-one-third span{
  	font-size:3em;
  	line-height: 0.9em;
  	letter-spacing: 0.1em;
@@ -88,7 +88,7 @@ div.container div.content-container
  	color: #a0ce4e;
  }
 
- div.container div.content-container span{
+div.content-container span{
  	color:#a0ce4e;
  }
 
@@ -129,6 +129,7 @@ div.word-logo p span.c{
 }
 
 hr{
+	width:90%;
 	border-color: #e0dede;
     border-top-width: 1px;
     border-bottom-width: 1px;
@@ -140,6 +141,10 @@ hr{
 
 .slick-slider{
 	margin:0 auto !important;
+}
+
+slick{
+	cursor: pointer;
 }
 
 slick div.slick-list div > img{
@@ -169,4 +174,39 @@ div.facilities-box div.pricing{
 	font-size:1.5em;
 	margin-top:1em;
 	margin-bottom: 1em;
+}
+
+div.text-input{
+	position: relative;
+	margin-top:2em;	
+	display: inline-block;
+	width:100%;
+}
+
+div.text-input span{
+	position: absolute;
+	top:0.2em;
+	left:0.5em;
+}
+
+div.text-input input[type="text"],input[type="date"]{
+	padding:0.5em;
+	font-size:1em;
+	line-height: 1em;
+	width: 100%;
+}
+
+input[type="text"].myFocus {  
+    padding-top:2em;
+}
+
+div.the-container{
+	padding-top:5em;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
