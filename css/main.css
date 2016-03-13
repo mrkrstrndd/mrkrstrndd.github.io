@@ -92,7 +92,8 @@ div.content-container span{
  	color:#a0ce4e;
  }
 
- div.fusion-one-third{ 	
+ div.fusion-one-third{
+ 	margin-top:1em;
  	display: inline-block;
  	float: left;
  	padding-right:1em;
@@ -316,11 +317,11 @@ div.register-form textarea#text-area{
 
 div.contact-container{
     display: inline-block;
-    width: 30%;
     padding:2em;
     background-color:rgba(105, 181, 72, 0.08);
     border-left:2px solid #a0ce4e;
 }
+
 div.contact-container input, textarea{
 	display: block;
 	width: 100%;
@@ -343,7 +344,7 @@ div.review-container ul li:nth-child(even){
 
 div.review-container ul li{
 	list-style: none;
-	margin-bottom:2em;
+	margin-bottom:0.5em;
 	border-left:2px solid #a0ce4e;
 	padding:1em;
 }
@@ -354,4 +355,27 @@ div.review-container ul li p.message{
 
 div.review-container ul li p.author{
 	font-weight: bold;
+}
+
+footer{
+	background-color: #272525;
+	margin-top:2em;
+	padding:3em;
+}
+
+footer ul li{
+	list-style: none;
+	display: inline;
+	text-align: center;
+	color:#fff;
+}
+
+footer ul li:hover{
+	cursor: pointer;
+	color:#a0ce4e;
+}
+
+
+footer ul li i.footer-logo{
+	font-size:3em;
 }
