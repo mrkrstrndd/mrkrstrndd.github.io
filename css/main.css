@@ -117,6 +117,32 @@ div.content-container span{
     font-size: 5em;
  }
 
+ div.parallax-bg{
+ 	background: url("../assets/facilities/garden_blur.jpg");
+ 	height:400px;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	width:100%;
+ 	position: relative;
+ 	display: table;
+ }
+
+div.parallax-bg div.parallax-header{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color:#fff;
+}
+
+div.parallax-bg div.parallax-header section h1,h2{
+	margin:0;
+}
+
+div.parallax-bg div.parallax-header section h1{
+	font-family: 'Fondamento', cursive;
+}
+
  div.rates{
  	background-color: #fff;
  	display: table;
